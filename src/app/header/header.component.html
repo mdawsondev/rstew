@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col">Placeholder</div>
+    <div class="col">
+      <button class="btn btn-primary" (click)="onLogin()" *ngIf="!loggedIn">Login</button>
+      <button class="btn btn-danger" (click)="onLogout()" *ngIf="loggedIn">Logout</button>
+    </div>
+  </div>
+</div>

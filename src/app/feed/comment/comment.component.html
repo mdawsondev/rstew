@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-2">
+      <ul class="list-unstyled" style="font-size: .8rem">
+        <li class="col">
+          <i class="fa fa-user me-1"></i>
+          <a href="https://reddit.com/u/{{comment.author}}">{{ comment.author }}</a>
+        </li>
+
+        <li class="col">
+          <i class="fa fa-rocket me-1"></i>
+          <a href="https://reddit.com/{{ comment.subreddit_name_prefixed }}">{{ comment.subreddit_name_prefixed }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col border">
+      <div class="row p-1 bg-secondary text-white">
+        <span>{{ comment.link_title }}</span>
+      </div>
+      <div class="row">
+        <p class="text-secondary">
+          {{ comment.body }}
+        </p>
+      </div>
+      <div class="row">
+        <div class="input-group input-group-sm mb-3">
+          <input type="text" class="form-control" #replyInput>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button"
+              (click)="postResponse(comment.id, replyInput.value)">
+              <i class="fa fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -18,6 +18,7 @@ At the moment, users are able to connect through an OAuth session to an existing
 * There isn't an active NSFW filter; Reddit supports this feature through their API and it will be implemented soon.
 * Live-loading of new comments is currently disabled while other components are being developed, click "search" to update.
 * New results are appended to the top of the current feed. If there are no results from your search, the feed won't change.
+* Reddit client_id and client_secret need to be provided through your own Reddit application permissions.
 
 ## Project Planning
 
